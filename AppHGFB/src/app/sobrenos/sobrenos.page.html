@@ -1,0 +1,41 @@
+<!-- Conteúdo principal -->
+<ion-content id="main-content" [fullscreen]="true">
+  <ion-header [translucent]="true">
+    <ion-toolbar class="custom-toolbar">
+      <ion-title>
+        <div class="image-container">
+          <img id="img1" src="assets/icon/3-removebg-preview.png">
+        </div>
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+
+    <H1 id="titulo">SOBRE MIM</H1>
+
+    <div id="div1">
+      <img src="assets/icon/foto-hugo.jpg" id="foto1">
+      <H4>Eu comecei a faculdade de Análise e Desenvolvimento de Sistemas em 2023. Desde o início do curso, tenho me destacado devido a minha constante dedicação em diversos projetos. Agora, no 4° período, continuo de forma eficiente, acumulando experiências e superando desafios.</H4>
+    </div>
+
+  </div>
+
+  
+
+  <ion-footer>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="mapa" (click)="navigateToMapa()">
+        <img src="assets/icon/1-removebg-preview.png" class="icon1">
+      </ion-tab-button>
+      <ion-tab-button tab="home" (click)="navigateToHome()">
+        <img src="assets/icon/2-removebg-preview.png" class="icon1">
+      </ion-tab-button>
+      <ion-tab-button tab="perfil" (click)="navigateToSobreNos()">
+        <img src="assets/icon/4-removebg-preview.png" class="icon1">
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-footer>
+
+</ion-content>
+

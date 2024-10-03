@@ -1,0 +1,39 @@
+<!-- Conteúdo principal -->
+<ion-content id="main-content" [fullscreen]="true">
+  <ion-header [translucent]="true">
+    <ion-toolbar class="custom-toolbar">
+      <ion-title>
+        <div class="image-container">
+          <img id="img1" src="assets/icon/3-removebg-preview.png">
+        </div>
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+
+    <H1 id="titulo">MAPA</H1>
+
+    <H3 id="subtitulo">Aqui você encontra locais para seus treinos</H3>
+
+    <div id="Mapa1">
+      <iframe id="maps" width="600" height="450" load="Lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/search?q=academias%20perto%20de%20mim&key=AIzaSyCTU14kOQma_N09G1VkFTE-nVISM5Y8wVU"></iframe>
+    </div>
+
+  </div>
+
+  <ion-footer>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="mapa" (click)="navigateToMapa()">
+        <img src="assets/icon/1-removebg-preview.png" class="icon1">
+      </ion-tab-button>
+      <ion-tab-button tab="home" (click)="navigateToHome()">
+        <img src="assets/icon/2-removebg-preview.png" class="icon1">
+      </ion-tab-button>
+      <ion-tab-button tab="perfil" (click)="navigateToSobreNos()">
+        <img src="assets/icon/4-removebg-preview.png" class="icon1">
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-footer>
+
+</ion-content>

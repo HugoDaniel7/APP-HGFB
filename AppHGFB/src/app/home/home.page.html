@@ -1,0 +1,45 @@
+<!-- Conteúdo principal -->
+<ion-content id="main-content" [fullscreen]="true">
+  <ion-header [translucent]="true">
+    <ion-toolbar class="custom-toolbar">
+      <ion-title>
+        <div class="image-container">
+          <img id="img1" src="assets/icon/3-removebg-preview.png">
+        </div>
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+
+    <H1 id="titulo">BEM-VINDO</H1>
+
+    <H3 id="subtitulo">Aqui você encontra as melhores academias</H3>
+
+    <div id="Dicas1">
+      <div id="Dicas30">
+          <img id="imgprin" src="assets/icon/Papel de parede com versículo bíblico aquarela delicado rosa.png">   
+      </div>
+    </div><br>
+
+    <div id="Dicas30">
+      <H3 id="subtitulo">Vamos começar o dia de treinos, hoje é dia: {{ dataAtual }}</H3>
+    </div>
+
+  </div>
+
+  <ion-footer>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="mapa" (click)="navigateToMapa()">
+        <img src="assets/icon/1-removebg-preview.png" class="icon1">
+      </ion-tab-button>
+      <ion-tab-button tab="home" (click)="navigateToHome()">
+        <img src="assets/icon/2-removebg-preview.png" class="icon1">
+      </ion-tab-button>
+      <ion-tab-button tab="perfil" (click)="navigateToSobreNos()">
+        <img src="assets/icon/4-removebg-preview.png" class="icon1">
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-footer>
+
+</ion-content>
